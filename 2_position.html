@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lost for Eden</title>
+  <meta charset="utf-8">
+  <style>
+    html{border:1px solid gray;}
+    body {
+      height:10000px;
+    }
+    div{
+      border:5px solid tomato;
+      margin:10px;
+    }
+    #relative{
+      position:relative;
+      left:100px;
+      bottom:100px;
+    }
+    #absolute{
+      position:absolute;
+      background-color: black;
+      color:white;
+      top:0;
+      left:0;
+    }
+    #fixed{
+      position:fixed;
+      background-color: lime;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1><a href="home.html">Lost for Eden</a></h1>
+  <div id="other">other</div>
+  <div id="parent">
+    parent
+    <div id="relative">relative (left 100px, bottom 100px from parent)</div>
+    <div id="static">static</div>
+    <div id="absolute">absolute</div>
+    <div id="fixed">fixed</div>
+  </div>
+
+</body>

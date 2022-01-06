@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lost for Eden</title>
+  <meta charset="utf-8">
+  <style>
+    .container{
+      background-color:powderblue;
+      height:200px;
+      display:flex;
+      flex-direction: row;
+      /* 1. 부모에게 flex 속성을 줘야 한다 (필수)
+      2. 기본적으로 가로의 경우 가로 전체, 세로의 경우 세로 전체를 차지한다.  */
+      /* flex-direction 속성
+      row : 가로 정렬 (기본값)
+      row--reverse : 반대쪽으로 가로 정렬
+      column : 세로 정렬
+      column-reverse : 반대쪽으로 세로 정렬 */
+
+    }
+    .item{
+      background-color:tomato;
+      color:white;
+      border:1px solid white;
+      flex-grow:1;
+      /*flex-grow:1;  기본값 : 0, 각각의 item이 container를 똑같은 크기로 채운다. */
+    }
+    .item:nth-child(1){
+      /*flex-grow:2;  cascading에 의해서 2번이 2배를 차지 */
+      flex-basis:150px; /* 기본 크기 */
+      flex-shrink: 1; /* 고통분담 비율 */
+    }
+    .item:nth-child(2){
+      /*flex-grow:2;  cascading에 의해서 2번이 2배를 차지 */
+      flex-basis:150px; /* 기본 크기 */
+      flex-shrink: 0; /* 0: 고통분담하지 않음 */
+    }
+  </style>
+</head>
+
+
+</div>
+<body>
+  <h1><a href="home.html">Lost for Eden</a></h1>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+
+
+
+
+
+
+</body>
